@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More On CSS Selector</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        } */
+        /* .box::first-line{
+        color: rgb(47, 248, 87);
+     } */
+        /* .boxes *{
+         color: blue;
+         border: 2px solid black;
+      } */
+        /* [data-color ="primary"]{
+        margin: 56px; */
+        /* }   */
+        /* Attribute Selector */
+        /* p,a,.box ,[data-color ="primary"]{
+        margin: 56px;
+      }  */
+        /*Grouping of selector   */
+
+
+        .box:nth-last-child(1) {
+            background-color: blue;
+        }
+
+        .boxes::before {
+            content: "Harshit is Good Person";
+        }
+
+        /* Before and after are the pseudo elements */
+        .boxes::selection {
+            color: aqua;
+            background-color: black;
+
+        }
+
+        .box::first-letter {
+            color: aquamarine;
+        }
+
+        input::placeholder {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box ">Hey I am the box Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Blanditiis sequi fuga porro adipisci aliquid? Autem delectus quos harum deleniti? Aperiam soluta ipsa optio
+            eum?
+        </div>
+        <div class="box ">Hey I am the box</div>
+        <div class="box">Hey I am the box</div>
+        <input type="text" placeholder="Type your text here">
+    </div>
+
+
+</body>
+
+</html>

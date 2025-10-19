@@ -1,0 +1,15 @@
+.red{ 
+     color: rgb(29, 183, 183);   
+
+}
+.yellow{
+    background-color: aqua;
+}
+
+
+#HNM
+{
+    background-color: rgb(255, 94, 0);
+}
+/* . refers to the access the class 
+ Hashtag refers to the access the id */
